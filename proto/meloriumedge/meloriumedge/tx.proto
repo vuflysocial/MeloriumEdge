@@ -1,0 +1,7 @@
+syntax = "proto3";
+package meloriumedge.meloriumedge;
+
+option go_package = "meloriumedge/x/meloriumedge/types";
+
+// Msg defines the Msg service.
+service Msg {}

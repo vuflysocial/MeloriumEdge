@@ -1,0 +1,12 @@
+syntax = "proto3";
+package meloriumedge.meloriumedge;
+
+import "gogoproto/gogo.proto";
+import "meloriumedge/meloriumedge/params.proto";
+
+option go_package = "meloriumedge/x/meloriumedge/types";
+
+// GenesisState defines the meloriumedge module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
